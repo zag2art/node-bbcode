@@ -1,31 +1,30 @@
 {
   "name": "bbcode",
-  "description": "A BBCode Parser for NodeJS",
+  "description": "A BBCode Parser for Bombermine Community Tools",
   "main": "./lib/bbcode",
-  "version": "0.1.5",
-  "author": "Nick Campbell (http://github.com/ncb000gt)",
+  "version": "0.1.6",
+  "author": "Artur Zayats (http://github.com/zag2art)",
   "repository": {
     "type": "git",
-    "url": "http://github.com/ncb000gt/node-bbcode.git"
+    "url": "http://github.com/zag2art/node-bbcode.git"
   },
   "licenses": [
     {
-      "type": "BSD"
+      "type": "MIT"
     }
   ],
   "bugs": {
-    "url": "http://github.com/ncb000gt/node-bbcode/issues"
+    "url": "http://github.com/zag2art/node-bbcode/issues"
   },
   "dependencies": {
-    "underscore": "*",
     "lodash": "^2.4.1",
-    "should": "^3.3.0"
+    "node-uuid": "^1.4.1"
   },
   "devDependencies": {
     "mocha": "1.3.2",
-    "should": "1.1.0"
+    "should": "^3.3.0"
   },
   "scripts": {
-    "test": "mocha --require should ./tests/parse"
+    "test": "mocha -R spec"
   }
 }
