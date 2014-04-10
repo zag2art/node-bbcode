@@ -91,6 +91,10 @@ describe('bcrypt', function () {
         var parse = bbcode.parse('@nickname');
         (!!parse.users['nickname']).should.equal(true);
       });
+      it('@nickname to <user name="{uid}"/>', function () {
+        var parse = bbcode.parse('@!nickname');
+        parse.html.should.equal('<img class="bb-skin" src="http://bombermine.com/api/ctor/getskin?name=name&thumb=1" />');
+      });
     });
 
     it('should parse [quote] as <blockquote>', function () {
